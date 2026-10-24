@@ -1,0 +1,4 @@
+APK do Volei da Quadra
+- Instalar: copie volei-da-quadra.apk para o celular e abra (permita "instalar apps desconhecidos" para o app Arquivos/Chrome).
+- NAO apague volei.keystore nem senha-da-chave.txt: sem eles nao da para atualizar o app no futuro.
+- O app abre o site https://volei-da-quadra-filippochiarion02-5670s-projects.vercel.app e funciona offline depois da primeira abertura.
