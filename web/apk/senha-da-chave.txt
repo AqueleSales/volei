@@ -1,0 +1,3 @@
+Senha da chave do APK (guarde! sem ela nao da para atualizar o app depois):
+h5ikRyb2Kw3Gq9Ot6AJo
+Arquivo: volei.keystore  alias: volei
