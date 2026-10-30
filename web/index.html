@@ -108,6 +108,32 @@ td:first-child,th:first-child{text-align:left}
 .seg button{flex:1;border:0;background:none;padding:10px;border-radius:11px;font-weight:700;color:var(--mut);transition:all .18s}
 .seg button.on{background:var(--card);color:var(--tx);box-shadow:0 1px 4px rgba(0,0,0,.2)}
 nav button svg{width:24px;height:24px;display:block;margin:0 auto 2px}
+.aviso{background:color-mix(in srgb,#F59E0B 18%,var(--card));border:1px solid #F59E0B;border-radius:12px;padding:8px 10px;margin:8px 0;font-size:.85rem}
+.vaga{background:color-mix(in srgb,var(--az) 14%,var(--card));border:1px dashed var(--az);border-radius:10px;padding:6px 10px;margin-top:6px;font-size:.8rem;text-align:center}
+.cel.cam{border-color:#F59E0B;opacity:.9}.cel.cam .av{filter:none}
+.cel .sub{font-size:.62rem;color:#F59E0B;font-weight:700;margin-top:-4px}
+.pos{width:22px;text-align:center;color:var(--mut)}
+.seg label{flex:1;position:relative}
+.seg label input{position:absolute;opacity:0;pointer-events:none}
+.seg label span{display:block;text-align:center;padding:10px;border-radius:11px;font-weight:700;color:var(--mut);transition:all .18s;cursor:pointer}
+.seg label input:checked+span{background:var(--card);color:var(--tx);box-shadow:0 1px 4px rgba(0,0,0,.2)}
+.chip{display:none;margin-left:auto;font-size:.62rem;font-weight:700;color:#fff;border-radius:5px;padding:1px 6px}
+.card.time .chip{display:inline-block}
+.chip.k,.sub.k{background:#0EA5E9}.chip.p,.sub.p{background:#7C3AED}
+.cel .sub.k,.cel .sub.p{color:#fff;border-radius:5px;padding:0 5px;margin-top:-2px}
+.nv.k{color:#0EA5E9;font-weight:700}.nv.p{color:#7C3AED;font-weight:700}
+.comp{font-size:.72rem;margin:-2px 2px 6px}
+.chk.num{font-style:normal;font-size:.72rem;font-weight:800;width:22px;height:22px}
+.linha.sel{border-color:var(--az);background:color-mix(in srgb,var(--az) 14%,var(--card))}
+.setas{display:flex;gap:6px;margin-left:8px}
+.setas button{width:34px;height:34px;border-radius:10px;border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:0;display:flex;align-items:center;justify-content:center}
+.setas button[disabled]{opacity:.3}
+.setas svg{width:18px;height:18px}
+.barra{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(68px + env(safe-area-inset-bottom));width:calc(100% - 20px);max-width:540px;z-index:6;
+  background:var(--card);border:1px solid var(--az);border-radius:16px;padding:10px 12px;box-shadow:0 8px 24px rgba(0,0,0,.25);animation:subir .2s ease}
+.barra-b{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.barra-b .btn.sm{margin:0}
+.fila .linha{padding:4px 6px}
 @keyframes subir{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 @keyframes pop{0%{transform:scale(.4);opacity:.2}60%{transform:scale(1.25)}100%{transform:scale(1)}}
 @keyframes pulsar{50%{opacity:.6}}
@@ -117,6 +143,8 @@ nav button svg{width:24px;height:24px;display:block;margin:0 auto 2px}
 <div id="app"></div>
 <nav id="nav"></nav>
 <canvas id="confete"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="supabase-config.js"></script>
 <script src="logica.js"></script>
 <script src="app.js"></script>
 </body>
