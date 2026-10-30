@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.vercel.voleiweb",
+      "sha256_cert_fingerprints": ["9B:22:D9:B0:ED:3F:F9:22:91:B6:03:F5:16:A4:30:73:4B:81:E8:BA:49:2A:47:43:4D:D1:F2:54:3C:FD:04:BE"]
+    }
+  }
+]

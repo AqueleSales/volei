@@ -303,6 +303,8 @@ function abaJogo() {
     h += `<h2>Próximo confronto <small class="mut">(prévia)</small></h2>`;
     h += `<div class="duo">` + prev.times.map((t, n) => `<div class="card time"><div class="th ${n ? "b" : "a"}">${prev.tipo === "winner" ? "Desafiantes" : "Time " + (n + 1)}<small>${esc(Logica.composicao(D, t))}</small></div>${listaCompacta(t)}</div>`).join("") + `</div>`;
     if (aviso.length) h += `<div class="aviso">${aviso.map(esc).join("<br>")}</div>`;
+    const faltam = prev.tipo === "winner" && prev.times[0] ? D.config.tamanho - prev.times[0].length : 0;
+    if (faltam > 0) h += `<div class="mut">A fila só tem ${prev.times[0].length}: ${faltam === 1 ? "falta 1, que entra" : "faltam " + faltam + ", que entram"} do time que perder.</div>`;
     h += `<div class="mut">${prev.tipo === "winner" ? "O time que ganhar continua; quem perder vai para o fim da fila." : "Os dois times descansam e saem os próximos da fila."} Cada time leva 1 criança. Para mudar quem entra, use "Editar times e fila".</div>`;
   }
   h += `<h2>Fila de espera (${espera.length})</h2>`;
