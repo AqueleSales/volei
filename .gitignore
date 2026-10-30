@@ -1,0 +1,4 @@
+web/apk/
+web/web/
+*.keystore
+senha-da-chave.txt
